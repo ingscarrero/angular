@@ -1,0 +1,186 @@
+body {
+    font-family: Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+    color: #4b0f31;
+    background-color: #f1e5e6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.well.well-lg.header{
+    background-color: rgb(39,40,34); 
+    color: rgb(102,217, 233);
+}
+
+.box {
+    background-color: #dfc8ca;
+    padding: 1.25rem 1.25rem;
+}
+
+.box + .box {
+    margin-top: 1.5rem;
+}
+
+.pw-fileinput{
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+img{
+    margin: 0 auto;
+}
+
+
+/* The Modal (background) */
+.pw-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.pw-modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+.pw-modal-body{
+    padding: 10px;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.pw-close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.pw-close:hover,
+.pw-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.pw-modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.pw-modal-body {padding: 2px 16px;}
+
+.pw-modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+.graph-container{
+    padding: 1.0rem;
+}
+
+.red-square{
+    background-color: red;
+    width: 80px;
+    height: 80px;
+    /*position: absolute;*/
+    
+}
+
+.white-square{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+}
+
+.mode-1 .red-square{
+    margin: auto;
+}
+
+.mode-1 .white-square{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+.mode-2 .red-square {
+    margin: auto;
+    display : flex;
+    align-items : center;
+}
+
+.mode-2 .white-square {
+    margin: auto;
+}
+
+.mode-3 .red-square {
+    margin: auto;
+    /* Internet Explorer 10 */
+    display:-ms-flexbox;
+    -ms-flex-pack:center;
+    -ms-flex-align:center;
+
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+
+    /* Safari, Opera, and Chrome */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+
+    /* W3C */
+    display:box;
+    box-pack:center;
+    box-align:center;
+}
+
+.mode-4 .red-square {
+    margin: auto;
+    position: relative;
+}
+
+.mode-4 .white-square {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform    : translate(-50%, -50%);
+}
